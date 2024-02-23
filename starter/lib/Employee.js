@@ -25,7 +25,7 @@ class Employee {
 
     // Method to get role (always returns 'Employee' for the base class)
     getRole() {
-        return 'Employee'; // Return the string 'Employee'
+        return 'Employee'; // Return the role 'Employee'
     }
 }
 
