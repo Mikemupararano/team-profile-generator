@@ -3,9 +3,10 @@ h1 {
     color: white;
 }
 body {
-    background: #024f4a;
+    background: #5bc0de;
     color:blue;
 }
-h2 {
+h2, h3 {
     background-color: blue;
+    color: white;
 }
