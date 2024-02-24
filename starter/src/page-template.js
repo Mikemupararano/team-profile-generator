@@ -93,21 +93,21 @@ module.exports = team => {
     <title>My Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center bg-danger text-white">My Team</h1>
+    <div class="container-fluid alert alert-info text-primary">
+        <div class="row alert alert-info">
+            <div class="col-12 jumbotron mb-3 team-heading bg-info text-primary">
+                <h1 class="text-center bg-danger text-white py-4">My Team</h1>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container text-primary">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area col-12 d-flex justify-content-center text-primary">
                 ${generateTeam(team)}
             </div>
         </div>

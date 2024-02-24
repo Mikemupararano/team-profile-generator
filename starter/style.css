@@ -1,4 +1,8 @@
 h1 {
-    background: red
+    /*background: red*/
     color: white;
+}
+body {
+    background: #024f4a;
+    color:blue;
 }
