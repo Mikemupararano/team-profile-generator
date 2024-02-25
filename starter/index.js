@@ -25,21 +25,45 @@ async function gatherAndRenderTeamInfo() {
                 type: "input",
                 name: "name",
                 message: "Enter the manager's name:",
+                 validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
             },
             {
                 type: "input",
                 name: "id",
                 message: "Enter the manager's employee ID:",
+                 validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
             },
             {
                 type: "input",
                 name: "email",
                 message: "Enter the manager's email:",
+                 validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
             },
             {
                 type: "input",
                 name: "officeNumber",
                 message: "Enter the manager's office number:",
+                 validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
             },
         ]);
 
@@ -66,21 +90,45 @@ async function gatherAndRenderTeamInfo() {
                         type: "input",
                         name: "name",
                         message: "Enter the engineer's name:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                     {
                         type: "input",
                         name: "id",
                         message: "Enter the engineer's employee ID:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                     {
                         type: "input",
                         name: "email",
                         message: "Enter the engineer's email:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                     {
                         type: "input",
                         name: "github",
                         message: "Enter the engineer's GitHub username:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                 ]);
                 const engineer = new Engineer(engineerInfo.name, engineerInfo.id, engineerInfo.email, engineerInfo.github);
@@ -91,21 +139,45 @@ async function gatherAndRenderTeamInfo() {
                         type: "input",
                         name: "name",
                         message: "Enter the intern's name:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                     {
                         type: "input",
                         name: "id",
                         message: "Enter the intern's employee ID:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                     {
                         type: "input",
                         name: "email",
                         message: "Enter the intern's email:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                     {
                         type: "input",
                         name: "school",
                         message: "Enter the intern's school:",
+                         validate: (answer) => {
+                if (answer.trim() === "") {
+                    return "Please enter a valid title";
+                }
+                return true;
+            }
                     },
                 ]);
                 const intern = new Intern(internInfo.name, internInfo.id, internInfo.email, internInfo.school);
