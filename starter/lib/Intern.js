@@ -1,4 +1,3 @@
-// TODO: Write code to define and export the Intern class.  HINT: This class should inherit from Employee.
 // Intern.js
 
 // Require the Employee class to inherit from
@@ -10,7 +9,14 @@ class Intern extends Employee {
     constructor(name, id, email, school) {
         // Call the constructor of the parent class (Employee) with super()
         super(name, id, email);
-        this.school = school; // Set the 'school' property of the instance to the value passed as parameter
+
+        // Validate school argument
+        if (typeof school !== 'string' || school.trim() === '') {
+            throw new Error("Expected 'school' to be a non-empty string");
+        }
+
+        // Set the 'school' property of the instance to the value passed as parameter
+        this.school = school.trim();
     }
 
     // Method to get the intern's school

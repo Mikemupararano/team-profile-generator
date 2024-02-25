@@ -10,7 +10,14 @@ class Manager extends Employee {
     constructor(name, id, email, officeNumber) {
         // Call the constructor of the parent class (Employee) with super()
         super(name, id, email);
-        this.officeNumber = officeNumber; // Set the 'officeNumber' property of the instance to the value passed as parameter
+
+        // Validate officeNumber argument
+        if (typeof officeNumber !== 'number' || isNaN(officeNumber) || officeNumber <= 0) {
+            throw new Error("Expected 'officeNumber' to be a positive number");
+        }
+
+        // Set the 'officeNumber' property of the instance to the value passed as parameter
+        this.officeNumber = officeNumber;
     }
 
     // Method to get the manager's office number
