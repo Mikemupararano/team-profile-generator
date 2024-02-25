@@ -14,3 +14,9 @@ body {
 /*.card-header {
     background-color:#5bc0de ;
 }*/
+.container {
+    margin: 100px auto;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
