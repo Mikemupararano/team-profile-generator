@@ -26,3 +26,11 @@ body {
 .employee-card {
     width:31%;
 }
+
+ /* Custom styles for smaller screens */
+            @media (max-width: 576px) {
+                .employee-card {
+                    margin-bottom: 20px;
+                }
+            }           
+    
