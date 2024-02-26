@@ -20,3 +20,9 @@ body {
     display: flex;
     
 }
+.col {
+    margin: 15px;
+}
+.employee-card {
+    width:31%;
+}
