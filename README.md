@@ -2,7 +2,9 @@
 ## Description
 As I enter the final phases of my web development course, I have created an app that serves a great purpose at work places. Many companies have development teams that accomplish different roles. This application will take in information about employees on a software engineering team, then generate an HTML webpage that displays summaries for each person. 
 
- To gather information about the development team members and render the HTML file, I have used the Inquirer package to prompt the user for input regarding each team member. After gathering the information, the app creates objects for each team member using the correct the Employee class as blueprint. The Engineer, Intern and Manager classes extend the Employee class. Lastly, I can call the render function and pass in an array containing all employee objects to generate an HTML file. How great is that!
+ To gather information about the development team members and render the HTML file, I have used the Inquirer package to prompt the user for input regarding each team member. After gathering the information, the app creates objects for each team member using the 'Employee' class as blueprint. The Engineer, Intern and Manager classes extend the Employee class. Lastly, I can call the render function and pass in an array containing all employee objects to generate an HTML file. How great is that!
+
+ Also, the application passes all the test: Employee, Manager, Engineer and Intern, which is great (see below for images of the tests).
 
 ## Table of Contents
 - [Team Profile Generator](#team-profile-generator)
@@ -43,26 +45,32 @@ Also, when a user clicks on the links in the Table of Contents, they are taken t
 The inquirer package handles the questions and the user’s input answers.
 •	To invoke the application, the user should use the following code:
 node index.js
-•	The application can be found on this repository link: https://github.com/Mikemupararano/professional-readme-generator
-A screenshot of the app is shown here:
-![A screenshot :](./starter/utils/test/images/Screenshot1.png)
-The generated README will appear in the 'starter' folder.
+•	The application can be found on this repository link:
+A screenshot of the app is shown here:https://github.com/Mikemupararano/team-profile-generator
+Screenshot of the test:
+![A screenshot :](./assets/final-test.png)
+
+An image of the user input is shown here:
+![A screenshot :](./assets/final-user-input.png)
+The generated team profile will show in the 'output' folder. Here is the screenshot of the team profile: 
+![A screenshot :](./assets/final-screenshot.png)
+
+The genrated html is located here: https://github.com/Mikemupararano/team-profile-generator/blob/main/starter/output/team.html.
 
 ## License
 This application is covered under the MIT license.
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Contributing
-Guidelines for contributing to the project, such as how to report issues, how to submit pull requests, coding conventions, and other information for potential contributors are available on my Github pages: https://github.com/Mikemupararano?tab=repositories
+I have created a branch called 'employee' that I would like users to cone and contribute towards the improvement of this web application. The branch is found on this link: https://github.com/Mikemupararano/team-profile-generator/tree/employee.
 
 ## Credits
 I researched website and watched several videos to adapt and work out the code in this web application. I used the following web-links for research and support:
 Mike Thomas
 (2) https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f
 (3)https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
-(4) https://www.youtube.com/watch?v=o8hkjz1TQuQ
-(5) https://www.youtube.com/watch?v=Wt_i73XFb7M
-(6) https://github.com/MatWilmot/pizza-order-builder
-(7) https://www.youtube.com/watch?v=9YivEQFpmHQ
+(4) https://www.browserstack.com/guide/bootstrap-mobile-responsive
+(5) https://www.youtube.com/watch?v=soKo5LzN12w
+(6) https://www.youtube.com/watch?v=31LhQkLcZvE
 
 ## Tests
 N/A
